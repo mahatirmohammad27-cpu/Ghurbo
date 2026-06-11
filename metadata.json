@@ -1,0 +1,6 @@
+{
+  "name": "Ghurbo",
+  "description": "A comprehensive travel platform for Bangladesh, connecting travelers and tourism entrepreneurs with curated packages, hotel listings, and transportation options in key areas like Cox's Bazar, Sylhet, Sajek, and Bandarban.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

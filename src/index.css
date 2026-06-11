@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@variant dark (.dark &);
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-ocean: #0A314D;
+  --color-sand: #F5F2ED;
+  --color-forest: #2D5A27;
+  --color-accent: #D9C5A3;
+  --color-cream: #FDFCF8;
+}
+
+/* Custom styles for Editorial Aesthetic */
+.serif {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.massive-text {
+  font-size: 60px;
+  line-height: 0.8;
+  letter-spacing: -2px;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+@media (min-width: 640px) {
+  .massive-text {
+    font-size: 140px;
+    letter-spacing: -6px;
+    opacity: 0.08;
+  }
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(10, 49, 77, 0.08);
+}
+
+.dark .card-glass {
+  background: rgba(10, 31, 48, 0.85);
+  border: 1px solid rgba(217, 197, 163, 0.15);
+}
+
+.dark select option {
+  background-color: #0c2438;
+  color: #FDFCF8;
+}
+
+/* Custom scrollbar for dark mode */
+.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #041421;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #0a314d;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #d9c5a3;
+}
+
+.sidebar-link {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
